@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jogo do Galo</title>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                 
+
+            </div>
+            <div class="col-8">
+                <div class="maximo">
+                <h1 style="margin-left: 230px;"> Jogador <span id="jogador"></span></h1>
+            
+                <main id = "tabuleiro">
+                    <div><input type="button" value=" "><input type="button" value=" "><input type="button" value=" "><input disabled  id ="nova" type="button" value=" ">
+                    </div>
+                    <div><input type="button" value=" "><input type="button" value=" "><input type="button" value=" "><input disabled id ="nova2" type="button" value=" ">
+                    </div>
+                    <div><input type="button" value=" "><input type="button" value=" "><input type="button" value=" "><input disabled id ="nova3" type="button" value=" ">
+                    </div>
+                    <div><input disabled  id ="nova4" type="button" value=" "><input disabled  id ="nova5" type="button" value=" "><input disabled id ="nova6" type="button" value=" "><input disabled id ="nova7" type="button" value=" ">
+                    </div>
+                </main>
+            </div>
+                <button style="margin-left: 65px;" type="button" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"
+                     onclick="reset()" >Reiniciar</button>
+                <a href="intrucoes.html" style="margin-left: 315px;" class="btn btn-primary btn-lg active" role="button"
+                    aria-pressed="true">Instruções</a>
+
+
+            </div>
+            <div class="col-2">
+                <p>Pontos</p>
+                <p id="pontosX" value =""></p>
+                <p id="pontosO" value =""></p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
